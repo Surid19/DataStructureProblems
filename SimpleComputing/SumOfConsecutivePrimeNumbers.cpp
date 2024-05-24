@@ -2,10 +2,10 @@
 
 using namespace std;
 
-  const int maxp=2000, n=20000;   
+  const int maxp=2000, n=20000;   //Taking array size
    int prime[maxp], total=0;
 
-bool isprime(int k){
+bool isprime(int k){              //Checking k is a prime number or not
     for(int i=0; i<total; i++){
         if(k%prime[i]==0){
             return false;
